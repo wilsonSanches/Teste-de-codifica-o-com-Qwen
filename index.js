@@ -14,6 +14,7 @@ const openai = new OpenAI({
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
 
 // Banco de dados simples em memória (em produção, use um banco de dados real)
 let activities = [];
